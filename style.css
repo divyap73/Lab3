@@ -1,0 +1,135 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main container styling */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 420px;
+    margin-right: 20px;
+}
+
+/* Currency exchange box styling */
+.currency-exchange {
+    background-color: #e0e4e8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 540px;
+    max-height: 160px;
+    display: inline-block;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+/* Heading styling */
+h1, h3 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+/* Label and input styling */
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Standard input and dropdown styling */
+input[type="text"],
+input[type="range"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+}
+
+/* Disabled input styling */
+input[disabled] {
+    background-color: #f1f5f9;
+    color: #6b7280;
+    font-weight: bold;
+}
+
+/* Range input slider styling */
+input[type="range"] {
+    -webkit-appearance: none;
+    background: #d1e9fc;
+    border-radius: 4px;
+    height: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #0056b3;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Error message styling */
+.error-message {
+    color: #e63946;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Currency select styling */
+#currency {
+    margin-top: 10px;
+}
+
+#tipPercentageDisplay {
+    font-weight: bold;
+    color: #333;
+    min-width: 25px;
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .container, .currency-exchange {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"],
+    select,
+    input[type="range"] {
+        font-size: 0.9rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
